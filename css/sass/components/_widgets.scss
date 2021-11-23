@@ -1,0 +1,103 @@
+.sidebar {
+  display: none;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
+    max-width: 380px;
+    flex: 0 0 380px;
+  }
+}
+
+.meme-1 {
+  width: 168px;
+  position: absolute;
+  left: 22%;
+  bottom: -42px;
+  transform: translate(-3px, 0);
+
+  @include media-breakpoint-down(xxl) {
+    left: 18%;
+    transform: translate(-6px, 0);
+  }
+
+  @include media-breakpoint-down(xl) {
+    left: 12%;
+    transform: translate(-8px, 0);
+  }
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.meme-2 {
+  height: 160px;
+  position: absolute;
+  bottom: 100%;
+  right: 40px;
+  margin-bottom: -14px;
+
+  @include media-breakpoint-down(lg) {
+    right: 0;
+    height: 140px;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 120px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 100px;
+  }
+}
+
+.meme-3 {
+  max-width: 50%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  transform: translateX(-50%);
+
+  @include media-breakpoint-down(lg) {
+    left: 18%;
+  }
+}
+
+.meme-4 {
+  height: 160px;
+  position: absolute;
+  bottom: 100%;
+  left: 16%;
+  margin-bottom: -14px;
+
+  @include media-breakpoint-down(md) {
+    height: 120px;
+    left: 4%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 100px;
+  }
+}
+
+.meme-5 {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 35px;
+
+  @include media-breakpoint-down(md) {
+    right: 10px;
+  }
+}
+
+.meme-6 {
+  width: 90px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

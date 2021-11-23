@@ -1,0 +1,87 @@
+.card-1 {
+  @include frame("rect", 62%);
+  border: 1px solid $border-color;
+  border-radius: 10px;
+
+  @include media-breakpoint-down(sm) {
+    border-radius: 4px;
+  }
+}
+
+.card-2 {
+  color: $text-color;
+
+  &__frame {
+    @include frame("rect", 56.25%);
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-family: $h2g;
+    color: $text-color;
+    margin-top: 8px;
+
+    a {
+      color: inherit;
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 12px;
+  }
+}
+
+.card-3 {
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #5d5151;
+    margin-top: 8px;
+
+    img {
+      height: 2em;
+    }
+  }
+}
+
+.card-4 {
+  &__title {
+    font-size: 14px;
+    text-align: center;
+    color: #5ca822;
+    margin-top: 8px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__title {
+      font-size: 12px;
+    }
+  }
+}
+
+.tag {
+  display: inline-block;
+  font-family: $gothic;
+  font-size: 18px;
+  background-color: $light;
+  line-height: 32px;
+  padding: 0 20px;
+  border-radius: 16px;
+  color: $text-color;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $purple;
+    color: $white;
+  }
+}

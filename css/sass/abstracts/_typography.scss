@@ -1,0 +1,19 @@
+@include font-face("H2gtrE", "H2gtrE");
+@include font-face("Gulim", "Gulim");
+@include font-face("MalgunGothicRegular", "MalgunGothicRegular");
+@include font-face(
+  "AdobeGothicStd-Bold-Alphabetic",
+  "AdobeGothicStd-Bold-Alphabetic"
+);
+
+$h2g: "H2gtrE", sans-serif;
+$gulim: "Gulim", sans-serif;
+$gothic: "MalgunGothicRegular", sans-serif;
+$dotum: "Dotum", sans-serif;
+
+@font-face {
+  font-family: "AdobeGothicStd";
+  src: url("../fonts/AdobeGothicStd-Bold.otf") format("opentype");
+}
+
+$std: "AdobeGothicStd", sans-serif;

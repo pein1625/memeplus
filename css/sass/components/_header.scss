@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+  z-index: $zindex-fixed;
+  background-color: $white;
+
+  &__logo {
+    display: inline-flex;
+    margin: 17px 0;
+
+    img {
+      height: 24px;
+    }
+  }
+}
